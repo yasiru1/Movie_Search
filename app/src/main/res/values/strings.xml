@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">Movie Search</string>
+    <string name="something_went_wrong">Something went wrong</string>
+    <string name="movie_title">Movie title…</string>
+
+
+    <string name="search_no_results">No results Found</string>
+    <string name="api_limit_exceed">API daily limit exceeded</string>
+
+
+    <string name="label_photos">Photos</string>
+    <string name="label_cast">Cast</string>
+</resources>
