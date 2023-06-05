@@ -3,7 +3,6 @@ package com.yasiru.moviesearch.ui
 
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
-import androidx.appcompat.app.AppCompatDelegate
 import com.yasiru.moviesearch.R
 import com.yasiru.moviesearch.ui.list.MovieListFragment
 
@@ -20,6 +19,12 @@ class MainActivity : AppCompatActivity() {
 
         if (savedInstanceState == null) {
             navigationWrapper.pushScreen(MovieListFragment.newInstance(), "movie-list")
+        }
+    }
+
+    override fun onBackPressed() {
+        if (!navigationWrapper.pop()) {
+            onBackPressedDispatcher.onBackPressed()
         }
     }
 
